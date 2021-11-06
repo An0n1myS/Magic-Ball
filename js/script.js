@@ -30,11 +30,11 @@ littleCircle.append(answer);
 par.innerHTML='Задайте ваш вопрос';
 askBtn.innerHTML='Задать вопрос';
 
-var prediction = ['Maybe', 'Never!', 'No','Possibly', 'Yes!','No matter','For shure', 'Seems real', 'Hit in point'];
+var otvetu = ['Может быть', 'Никогда!', 'Нет','Возможно', 'Да!','Не важно','Удовлетворительно', 'Выглядит реальным'];
 askBtn.onclick = function Predict () {
     if(askInput.value.length){
         circle.classList.add('circleShake');
-        var ans = prediction[Math.floor(Math.random() * prediction.length)];
+        var ans = otvetu[Math.floor(Math.random() * otvetu.length)];
         answer.className="answer";
         answer.innerHTML = ans;
         circle.addEventListener( "animationend",  function() {
